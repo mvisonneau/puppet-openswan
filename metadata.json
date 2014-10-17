@@ -1,0 +1,14 @@
+{
+  "name": "knak-openswan",
+  "version": "0.1.0",
+  "author": "knak",
+  "summary": "Provides the installation and configuration of an ipsec over xl2tp VPN server",
+  "license": "Apache 2.0",
+  "source": "https://github.com/mvisonneau/puppet-openswan",
+  "project_page": "https://github.com/mvisonneau/puppet-openswan",
+  "issues_url": "https://github.com/mvisonneau/puppet-openswan/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
