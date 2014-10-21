@@ -1,0 +1,14 @@
+# File managed by Puppet
+<%- @dns.each do |ns| -%>
+ms-dns <%= ns %>
+<%- end -%>
+auth
+mtu 1200
+mru 1000
+crtscts
+hide-password
+modem
+name l2tpd
+proxyarp
+lcp-echo-interval 30
+lcp-echo-failure 4

@@ -1,0 +1,6 @@
+# File managed by Puppet
+
+auth    required        pam_nologin.so
+auth    required        pam_unix.so
+account required        pam_unix.so
+session required        pam_unix.so

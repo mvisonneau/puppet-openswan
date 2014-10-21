@@ -1,0 +1,19 @@
+; File managed by Puppet
+
+[global]
+ipsec saref = yes
+saref refinfo = 30
+
+;debug avp = yes
+;debug network = yes
+;debug state = yes
+;debug tunnel = yes
+
+[lns default]
+ip range = <%= @vpn_ip_range %>
+local ip = <%= @vpn_local_ip %>
+unix authentication = yes
+require authentication = yes
+;ppp debug = yes
+pppoptfile = /etc/ppp/options.xl2tpd
+length bit = yes
