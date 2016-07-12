@@ -1,5 +1,5 @@
 # File managed by Puppet
-<%- @dns.each do |ns| -%>
+<%- @dns_servers.each do |ns| -%>
 ms-dns <%= ns %>
 <%- end -%>
 auth

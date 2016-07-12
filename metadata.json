@@ -1,14 +1,27 @@
 {
-  "name": "knak-openswan",
-  "version": "0.1.0",
-  "author": "knak",
+  "name": "mvisonneau-strongswan",
+  "version": "0.0.2",
+  "author": "mvisonneau",
   "summary": "Provides the installation and configuration of an ipsec over xl2tp VPN server",
   "license": "Apache 2.0",
-  "source": "https://github.com/mvisonneau/puppet-openswan",
-  "project_page": "https://github.com/mvisonneau/puppet-openswan",
-  "issues_url": "https://github.com/mvisonneau/puppet-openswan/issues",
+  "source": "https://github.com/mvisonneau/puppet-strongswan",
+  "project_page": "https://github.com/mvisonneau/puppet-strongswan",
+  "issues_url": "https://github.com/mvisonneau/puppet-strongswan/issues",
+  "tags": ["strongswan","openswan", "vpn", "ipsec"],
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.0.0"
+    },
+    {
+      "name": "puppetlabs-firewall",
+      "version_requirement": ">= 1.8.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04", "16.04" ]
+    }
   ]
 }
-
